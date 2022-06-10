@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+#login_box{
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  width: 35%;
+  height: 400px;
+  background-color: #282c34;
+  border-radius: 15px;
+}
+#email_text{
+  font-size: large;
+  font-weight: 800;
+  color: white;
+}
+#password_box{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  display: inline-block;
+}
+#password_box input{
+  width: 100%;
+  
+  height: 25px;
+  margin-left: 6%;
+  font-size: large;
+}
+#password_text{
+  font-size: large;
+  font-weight: 800;
+  color: white;
+}
+#login_button{
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 100%;
+}
+#btn{
+  width: 75%;
+  height: 30px;
+  font-size: large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+  margin-top: 5%;
+  margin-left: -5%;
+}
+#signup_link{
+  position: absolute;
+  top: 85%;
+  left: 20%;
+}
+#email_box input{
+  width: 108%;
+  margin-left: 4%;
+  height: 25px;
+  font-size: large;
+}
+#email_box{
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  display: inline-block;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
