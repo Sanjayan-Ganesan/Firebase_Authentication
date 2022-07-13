@@ -33,7 +33,8 @@ const handleSubmit = async (e)=>{
 
   return (
       <>
-      <h1>Login to Your Account</h1>
+      
+      {/* <h1>Login to Your Account</h1>
       <div id='login_box'>
 <form onSubmit={handleSubmit}>
 <div id='email_box'>
@@ -54,6 +55,33 @@ const handleSubmit = async (e)=>{
 <h4>Don't have an Account <Link to='/Signup'>Sign up</Link></h4>
 </div>
 
+      </div> */}
+
+      <div id='login_box'>
+<div id='member_login_box'>
+    
+</div>
+<div id='main_login_box'>
+<form onSubmit={handleSubmit}>
+
+<div id='email_box'>
+
+<input placeholder='Username' type={`email`} onChange={(e)=>{SetEmail(e.target.value)}}/>
+</div>
+
+<div id='password_box'>
+<input placeholder='Password' type={`password`} onChange={(e)=>{SetPassword(e.target.value)}}/>
+</div>
+
+<div id='login_button'>
+<button id='btn'>Login</button>
+</div>
+
+</form>
+</div>
+<div id='members_login_box'>
+<h4>Don't have an Account <Link to='/Signup'>Sign up</Link></h4>
+</div>
       </div>
       </>
     

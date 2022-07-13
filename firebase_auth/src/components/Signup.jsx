@@ -52,9 +52,32 @@ const handle_P_Change = (e)=>{
 
   return (
     <>
+    <div id='login_box'>
+
+    <div id='member_login_box'>
     
-    <h1>Create an Account</h1>
-      <div id='login_box'>
+    </div>
+    <form onSubmit={handleSubmit}>
+<div id='email_box'>
+    <label id='email_text'>Enter Email: </label>
+    <input placeholder='Enter Email Address...' type={`email`} onChange={handle_E_Change}/>
+</div>
+
+<div id='password_box'>
+    <label id='password_text'>Enter Password: </label>
+    <input placeholder='Enter Password...' type={`password`} onChange={handle_P_Change}/>
+</div>
+
+<div id='login_button'> 
+    <button id='btn'>Sign up</button>
+</div>
+</form>
+<div id='members_login_box'>
+<h4>Already have an Account <Link to='/Login'>Sign in</Link></h4>
+</div>
+
+    </div>
+      {/* <div id='login_box'>
 <form onSubmit={handleSubmit}>
 <div id='email_box'>
     <label id='email_text'>Enter Email: </label>
@@ -72,11 +95,11 @@ const handle_P_Change = (e)=>{
 </form>
 
 <div id='signup_link'>
-<h4>Already have an Account <Link to='/'>Sign in</Link></h4>
+<h4>Already have an Account <Link to='/Login'>Sign in</Link></h4>
 </div>
 
       </div>
-    
+     */}
     
     
     </>
